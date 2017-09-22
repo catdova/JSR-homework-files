@@ -1,7 +1,7 @@
 //browser prompts user to imput their favorite dog breed
 var userBreed = prompt("what's your favorite dog breed?")
 
-//array of dog breeds
+//array of dog breeds!
 var dogBreeds = ["maltese", "yorkie", "shih tzu", "pug", "corgi", "beagle", "german shepard", "poodle", "mutt"]
 
 //my favorite dog breed

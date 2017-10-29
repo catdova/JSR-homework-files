@@ -42,12 +42,14 @@ $(function() {
 	        } else {
 	            console.log(response.data.photos.length);
 	        // Handle the successful response here
-	         for (i = 0; i < response.data.photos.length; i++)
-	         	var photo = response.data.photos[i].image_url;
-	        	$('.images').prepend('<img src=' + photo + ' />')
-	    }
-	        });
-	      });
+	         for (i = 0; i < response.data.photos.length; i++) {
+   				 var imageList = "<img src=" + response.data.photos[i].image_url + " />"
+   				 $('.images').append(imageList);
+   				}
+	        	
+	   			}	
+	    	});
+		});
   	} else {
   		$('.images').append('sorry, the browser does not support geolocation');
   	}
